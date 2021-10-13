@@ -1,3 +1,11 @@
+/* sezione header */
+
+#header div[class^="col-"] {
+    height: 400px;
+    background-color: tan;
+    border: solid 1px black;
+}
+
 /* sezione jumbotron */
 
 #jumbotron div[class^="col-"] {
@@ -11,6 +19,102 @@
 
 #new div[class^="col-"] {
     height: 50px;
+    background-color: pink;
+    border: solid 1px black;
+}
+
+/* sezione pics */
+
+#pics div[class^="col-"] {
+    height: 100px;
+    background-color: green);
+    border: solid 1px black;
+}
+
+/* sezione playstation */
+
+#playStation div[class^="col-"] {
+    height: 60px;
+    background-color: chocolate;
+    border: solid 1px black;
+}
+
+/* sezione console */
+
+#console div[class^="col-"] {
+    height: 400px;
+    background-color:blue;
+    border: solid 1px black;
+}
+
+/* sezione pics_console */
+
+#pics_console div[class^="col-"] {
+    height: 80px;
+    background-color: red;
+    border: solid 1px black;
+}
+
+/* sezione two */
+
+#two div[class^="col-"] {
+    height: 400px;
+    background-color:rgb(0, 255, 13);
+    border: solid 1px black;
+}
+
+/* sezione new */
+
+#new div[class^="col-"] {
+    height: 100px;
+    background-color:yellow;
+    border: solid 1px black;
+}
+
+/* sezione explore */
+
+#explore div[class^="col-"] {
+    height: 250px;
+    background-color:rgb(17, 17, 16);
+    border: solid 1px black;
+}
+
+/* sezione plus */
+
+#plus div[class^="col-"] {
+    height: 300px;
+    background-color:yellow;
+    border: solid 1px black;
+}
+
+/* sezione store */
+
+#store div[class^="col-"] {
+    height: 250px;
+    background-color:rgb(255, 81, 0);
+    border: solid 1px black;
+}
+
+/* sezione now */
+
+#now div[class^="col-"] {
+    height: 300px;
+    background-color:rgb(255, 0, 221);
+    border: solid 1px black;
+}
+
+/* sezione media */
+
+#media div[class^="col-"] {
+    height: 50px;
+    background-color:rgb(0, 17, 255);
+    border: solid 1px black;
+}
+
+/* sezione footer */
+
+#footer div[class^="col-"] {
+    height: 400px;
     background-color: rgba(44,62,80,255);
     border: solid 1px black;
 }
