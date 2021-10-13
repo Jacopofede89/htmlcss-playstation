@@ -1,0 +1,16 @@
+/* sezione jumbotron */
+
+#jumbotron div[class^="col-"] {
+    height: 400px;
+    background-color: rgba(44,62,80,255);
+    border: solid 1px black;
+}
+
+
+/* sezione new */
+
+#new div[class^="col-"] {
+    height: 50px;
+    background-color: rgba(44,62,80,255);
+    border: solid 1px black;
+}
