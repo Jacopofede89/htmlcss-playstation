@@ -17,6 +17,7 @@ header div[class^="col-"] {
     float: right;
 }
 
+
 /* sezione jumbotron */
 
 #jumbotron div[class^="col-"] {
@@ -40,8 +41,8 @@ header div[class^="col-"] {
     width: 250px;
     color: white;
 }
-.box_text p{
-
+.nav-link img{
+    width:15px;
 }
 
 .box_text button{
@@ -186,11 +187,30 @@ header div[class^="col-"] {
 #plus div[class^="col-"] {
     height: 300px;
     background-color:rgba(190,188,187,255);
-    border: solid 1px black;
+    /* border: solid 1px black; */
+}
+
+#plus_pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plus_text{
+    color: white;
+}
+
+.plus_text img{
+    width: 60%;
+    height: 40%;
+}
+
+.plus_text button{
+    border-radius: 20px;
 }
 
 @media screen and (min-width:0px) and (max-width:768px)  {  
-    #pio {
+    #plus_pic {
       display: none;
     }
   }
@@ -198,9 +218,15 @@ header div[class^="col-"] {
 /* sezione store */
 
 #store div[class^="col-"] {
-    height: 250px;
-    background-color:rgb(255, 81, 0);
+    /* height: 400px; */
+    /* background-color:rgb(255, 81, 0); */
     border: solid 1px black;
+}
+
+#store img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
 }
 
 /* sezione now */
@@ -211,12 +237,43 @@ header div[class^="col-"] {
     border: solid 1px black;
 }
 
+#now_pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.now_text{
+    color: white;
+}
+
+.now_text img{
+    width: 60%;
+    height: 40%;
+}
+
+.now_text button{
+    border-radius: 20px;
+}
+
+@media screen and (min-width:0px) and (max-width:768px)  {  
+    #now_pic {
+      display: none;
+    }
+  }
+
 /* sezione media */
 
 #media div[class^="col-"] {
-    height: 50px;
+    height: 200px;
     background-color:rgb(0, 17, 255);
     border: solid 1px black;
+}
+
+#media img{
+    width: 50%;
+    height: 90%;
+    padding: 5px;
 }
 
 /* sezione footer */
