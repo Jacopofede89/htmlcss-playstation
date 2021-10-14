@@ -6,6 +6,21 @@ header div[class^="col-"] {
     border: solid 1px black;
 }
 
+.bg-light{
+    background-color: cadetblue;
+}
+
+#nav_jumbo{
+    color: black;
+    background-color: brown;
+}
+
+@media screen and (min-width:0px) and (max-width:992px){  
+    #form_ li, #btn_, #img_{
+      display: none;
+    }
+  }
+
 #logo_sony{
     background-color: black;
     color: white;
@@ -15,6 +30,25 @@ header div[class^="col-"] {
 #logo_sony img{
     width: 10%;
     float: right;
+    margin-top: 10px;
+}
+
+#form_{
+    margin-left: 80px;
+}
+
+
+#btn_{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+}
+
+#img_{
+    width: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
 }
 
 
@@ -22,8 +56,8 @@ header div[class^="col-"] {
 
 #jumbotron div[class^="col-"] {
     height: 400px;
-    background-color: rgba(44,62,80,255);
-    border: solid 1px black;
+    /* background-color: rgba(44,62,80,255);
+    border: solid 1px black; */
 }
 
 #jumbotron{
@@ -49,13 +83,6 @@ header div[class^="col-"] {
     border-radius: 20px;
 }
 
-/* sezione new
-
-#new div[class^="col-"] {
-    height: 50px;
-    background-color: rgb(233, 10, 47);
-    border: solid 1px black;
-} */
 
 /* sezione pics */
 
@@ -77,21 +104,27 @@ header div[class^="col-"] {
 /* sezione playstation */
 
 #playStation div[class^="col-"] {
-    height: 150px;
+    /* height: 150px;
     background-color: chocolate;
-    border: solid 1px black;
+    border: solid 1px black; */
 }
 
 #playStation .row{
     text-align: center;
+    margin-top: 30px;
 }
+
+#playStation p:first-child{
+    color:#0072ce;
+}
+
 
 /* sezione console */
 
 #console div[class^="col-"] {
-    height: 400px;
+    /* height: 400px; */
     background-color:white;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     margin-bottom: 30px;
 }
 
@@ -99,6 +132,11 @@ header div[class^="col-"] {
     height: 400px;
     object-fit: cover;
 }
+
+.text_console{
+    margin-top: 70px;
+}
+
 
 
 
@@ -110,15 +148,19 @@ header div[class^="col-"] {
     flex-wrap: wrap;
     height: 120px;
     /* background-color: red; */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #pics_console img{
     width: 130px;
-    height: 80px;
+    height: 90px;
     object-fit: cover;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.io{
+    
 }
 
 /* sezione two */
@@ -147,7 +189,7 @@ header div[class^="col-"] {
     width: 150px;
     height: 140px;
     /* background-color:yellow; */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #new .container{
@@ -166,9 +208,9 @@ header div[class^="col-"] {
 /* sezione explore */
 
 #explore div[class^="col-"] {
-    height: 400px;
+    /* height: 400px; */
     /* background-color:rgb(17, 17, 16); */
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 #explore img{
@@ -177,7 +219,9 @@ header div[class^="col-"] {
     object-fit: cover;
     margin-top: 10px;
 }
-
+#explore_text{
+    text-align: center;
+}
 .explore_text{
     /* font-size: 5px; */
 }
@@ -187,6 +231,7 @@ header div[class^="col-"] {
 #plus div[class^="col-"] {
     height: 300px;
     background-color:rgba(190,188,187,255);
+    margin-top: 80px;
     /* border: solid 1px black; */
 }
 
@@ -220,7 +265,12 @@ header div[class^="col-"] {
 #store div[class^="col-"] {
     /* height: 400px; */
     /* background-color:rgb(255, 81, 0); */
-    border: solid 1px black;
+    /* border: solid 1px black; */
+    margin-top: 80px;
+}
+
+#text_store{
+    text-align: center;
 }
 
 #store img{
@@ -233,8 +283,9 @@ header div[class^="col-"] {
 
 #now div[class^="col-"] {
     height: 300px;
-    background-color:rgb(255, 0, 221);
-    border: solid 1px black;
+    background-color:rgba(22,28,59,255);
+    margin-top: 30px;
+    /* border: solid 1px black; */
 }
 
 #now_pic img{
@@ -265,21 +316,48 @@ header div[class^="col-"] {
 /* sezione media */
 
 #media div[class^="col-"] {
-    height: 200px;
+    /* width: 100px;
+    height: 100px;
     background-color:rgb(0, 17, 255);
-    border: solid 1px black;
+    border: solid 1px black; */
+    margin-top: 50px;
 }
 
 #media img{
-    width: 50%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     padding: 5px;
+}
+
+#text_media{
+    text-align: center;
 }
 
 /* sezione footer */
 
 footer div[class^="col-"] {
-    height: 80px;
-    background-color: rgba(44,62,80,255);
+    height: 150px;
+    /* background-color:rgba(0,67,156,255); */
     border: solid 1px black;
+}
+/* #nav_footer{
+    width: 20%;
+    height: 150px;
+    display: flex;
+} */
+#sony_container{
+    height: 250px;
+    background-color:rgba(0,67,156,255);
+}
+
+/* #pio{
+    display: flex;
+} */
+
+#pio div[class^="col-"]{
+    background-color: blueviolet;
+    border: solid 1px black;
+    width: 30%;
+    height: 100px;
+
 }
