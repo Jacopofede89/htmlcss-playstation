@@ -336,28 +336,33 @@ header div[class^="col-"] {
 /* sezione footer */
 
 footer div[class^="col-"] {
-    height: 150px;
-    /* background-color:rgba(0,67,156,255); */
-    border: solid 1px black;
+    /* height: 250px; */
+    background-color:rgba(0,67,156,255);
+    /* border: solid 1px black; */
+    color: white;
 }
-/* #nav_footer{
+
+#sony_logo{
     width: 20%;
-    height: 150px;
-    display: flex;
-} */
-#sony_container{
+    height: 50%;
+}
+
+#ps_logo{
+    width: 20%;
+    height: 50%;
+}
+
+#world_logo{
+    width: 5%;
+    
+}
+
+li{
+    
+    list-style-type: none;
+}
+/* #sony_container{
     height: 250px;
     background-color:rgba(0,67,156,255);
-}
-
-/* #pio{
-    display: flex;
 } */
 
-#pio div[class^="col-"]{
-    background-color: blueviolet;
-    border: solid 1px black;
-    width: 30%;
-    height: 100px;
-
-}
