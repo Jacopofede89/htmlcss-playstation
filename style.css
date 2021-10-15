@@ -1,20 +1,22 @@
 /* sezione header */
 
 header div[class^="col-"] {
-    height: 50px;
+    /* height: 50px;
     background-color: tan;
-    border: solid 1px black;
+    border: solid 1px black; */
 }
-
-.bg-light{
-    background-color: cadetblue;
-}
-
-#nav_jumbo{
+.nav-link{
     color: black;
-    background-color: brown;
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.toggle_color{
+    fill: black;
+
+}
 @media screen and (min-width:0px) and (max-width:992px){  
     #form_ li, #btn_, #img_{
       display: none;
@@ -34,7 +36,8 @@ header div[class^="col-"] {
 }
 
 #form_{
-    margin-left: 80px;
+    /* margin-left: 150px; */
+    justify-content: space-between;
 }
 
 
@@ -43,6 +46,7 @@ header div[class^="col-"] {
     background-color: black;
     border-radius: 20px;
     height: 40px;
+    border: none;
 }
 
 #img_{
@@ -55,26 +59,34 @@ header div[class^="col-"] {
 /* sezione jumbotron */
 
 #jumbotron div[class^="col-"] {
-    height: 400px;
+    /* height: 400px; */
     /* background-color: rgba(44,62,80,255);
     border: solid 1px black; */
 }
 
 #jumbotron{
     background-image: url(img/jumbo-bg.png);
-    height: 400px;
+    height: 450px;
     background-size: cover;
+}
+
+#nav_jumbo{
+    background-color: white;
+    position:fixed ;
 }
 
 #jumbotron img{
     width: 200px;
-    height: 100px;
+    height: 50px;
+    margin-top: 100px;
 } 
 
 .box_text{
+    height: 150px;
     width: 250px;
     color: white;
 }
+
 .nav-link img{
     width:15px;
 }
@@ -89,7 +101,7 @@ header div[class^="col-"] {
 #pics div[class^="col-"] {
     height: 100px;
     /* background-color: green; */
-    border: solid 1px black; 
+    /* border: solid 1px black;  */
     /* border-radius: 10px; */
 }
 
@@ -99,6 +111,12 @@ header div[class^="col-"] {
     border-radius: 10px;
     object-fit: cover;
     margin-top: 10px;
+}
+
+#selection:hover{
+    border:solid 2px blue;
+    border-radius: 20px;
+    border-spacing: ;
 }
 
 /* sezione playstation */
@@ -138,8 +156,6 @@ header div[class^="col-"] {
 }
 
 
-
-
 /* sezione pics_console */
 
 #pics_console div[class^="col-"] {
@@ -159,27 +175,32 @@ header div[class^="col-"] {
     margin-bottom: 20px;
 }
 
-.io{
-    
-}
+
 
 /* sezione two */
 
 #two div[class^="col-"] {
-    height: 400px;
-    background-color:rgb(0, 255, 13);
-    border: solid 1px black;
+    /* height: 500px; */
+    /* background-color:rgb(0, 255, 13);
+    border: solid 1px black; */
 }
 
 #two img{
     width: 200px;
     height: 100px;
+    margin-top:50px
 }
 
 #two{
     background-image: url(img/it-takes-two-hero-banner-desktop.jpg);
-    height: 400px;
+    height: 500px;
     background-size: cover;
+}
+
+.box_text_two{
+    height: 150px;
+    width: 300px;
+    color: white;
 }
 
 /* sezione new */
@@ -187,7 +208,7 @@ header div[class^="col-"] {
 #new div[class^="col-"] {
     margin: auto;
     width: 150px;
-    height: 140px;
+    height: 200px;
     /* background-color:yellow; */
     /* border: solid 1px black; */
 }
@@ -197,12 +218,23 @@ header div[class^="col-"] {
     color: white;
 }
 
+#new h1{
+    margin-top: 40px;
+}
+
 #new img{
     width: 130px;
     height: 80px;
     border-radius: 10px;
     object-fit: cover;
     margin-top: 10px;
+}
+
+#new span{
+    font-size: 12px;
+}
+.fa-trademark{
+    font-size: 8px;
 }
 
 /* sezione explore */
@@ -221,9 +253,11 @@ header div[class^="col-"] {
 }
 #explore_text{
     text-align: center;
+    margin-top: 50px;
 }
-.explore_text{
-    /* font-size: 5px; */
+
+#explore .fa-registered{
+    font-size: 10px;
 }
 
 /* sezione plus */
@@ -242,7 +276,7 @@ header div[class^="col-"] {
 }
 
 .plus_text{
-    color: white;
+    margin-top: 50px;
 }
 
 .plus_text img{
@@ -296,6 +330,8 @@ header div[class^="col-"] {
 
 .now_text{
     color: white;
+    margin-top: 50px;
+
 }
 
 .now_text img{
@@ -304,6 +340,9 @@ header div[class^="col-"] {
 }
 
 .now_text button{
+    border:none;
+    background-color: rgba(245,245,245,255);
+    color: black;
     border-radius: 20px;
 }
 
@@ -320,7 +359,8 @@ header div[class^="col-"] {
     height: 100px;
     background-color:rgb(0, 17, 255);
     border: solid 1px black; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin:50px 0;
 }
 
 #media img{
@@ -336,10 +376,18 @@ header div[class^="col-"] {
 /* sezione footer */
 
 footer div[class^="col-"] {
-    /* height: 250px; */
+    height: 200px;
     background-color:rgba(0,67,156,255);
     /* border: solid 1px black; */
     color: white;
+}
+
+footer .container{
+    background-color: rgba(0,67,156,255);
+}
+
+footer p{
+    font-size: 12px;
 }
 
 #sony_logo{
@@ -350,6 +398,7 @@ footer div[class^="col-"] {
 #ps_logo{
     width: 20%;
     height: 50%;
+    margin-top: 30px;
 }
 
 #world_logo{
@@ -358,11 +407,9 @@ footer div[class^="col-"] {
 }
 
 li{
-    
     list-style-type: none;
 }
-/* #sony_container{
-    height: 250px;
-    background-color:rgba(0,67,156,255);
-} */
 
+.col{
+    font-size: 13px;
+} 

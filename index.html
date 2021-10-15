@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <title>PlayStation</title>
 </head>
 <body>
     <header>
-        <div class="container">
+       
             <div class="row">
                 <div id="logo_sony">
                     <img src="img/sony_logo.svg" alt="">
@@ -18,8 +19,8 @@
             </div>
             <div class="row">
                 
-                 <div>
-                    <nav id="nav_jumbo" class="navbar navbar-expand-lg navbar-light bg-light">
+                 <div id="nav_jumbo">
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#">
                               <img src="img/play_logo.svg" alt="">
@@ -29,9 +30,10 @@
                           </button>
                           <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
+                                
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Giochi
+                                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Giochi <img src="img/chevron-down-solid.svg" alt="">
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -39,9 +41,10 @@
                                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                   </li>
+                                 
                                   <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Hardware
+                                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Hardware <img src="img/chevron-down-solid.svg" alt="">
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -49,9 +52,10 @@
                                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                                     </ul>
                                   </li>
+                                  
                                   <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      Servizi
+                                    <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Servizi <img src="img/chevron-down-solid.svg" alt="">
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -61,8 +65,8 @@
                                   </li>
                                   
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Novità
+                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Novità <img src="img/chevron-down-solid.svg" alt="">
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -70,9 +74,10 @@
                                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                               </li>
+                             
                               <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Fai acquisti
+                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Fai acquisti <img src="img/chevron-down-solid.svg" alt="">
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                   <li><a class="dropdown-item" href="#">Action</a></li>
@@ -80,11 +85,13 @@
                                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                               </li>
+
                             </ul>
+                           
                             <form id="form_" class="d-flex">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                      My Play Station <img src="img/chevron-down-solid-hover.svg" alt="">
+                                      My Play Station <img class="toggle_color" src="img/chevron-down-solid.svg" alt="">
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                       <li><a class="dropdown-item" href="#">Action</a></li>
@@ -96,20 +103,20 @@
                               <button id="btn_" class="btn btn-outline-success" type="submit">Accedi</button>
                               <img id="img_" src="img/lens.svg" alt="">
                             </form>
+
                           </div>
                         </div>
                       </nav>
                  </div>
                 
             </div>
-        </div>
     </header>
 
     <div class="container" id="jumbotron">
         <div class="box_text">
             <img src="img/returnal-hero-banner-logo.png" alt="">
             <h2>Rompi il cerchio</h2>
-            <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante, i suoi intensi combattimenti e una grafica migliorata.</p>
+            <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante.</p>
             <button type="button" class="btn btn-danger">Acquista ora</button>
         </div>
     </div>
@@ -117,7 +124,7 @@
 
     <div class="container" id="pics">
         <div class="row">
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <div id="selection" class="col-6 col-sm-4 col-md-4 col-lg-2">
                 <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="">
             </div>
             <div class="col-6 col-sm-4 col-md-4 col-lg-2">
@@ -184,9 +191,9 @@
     </div>
 
     <div class="container" id="two">
-        <div class="box_text">
+        <div class="box_text_two">
             <img src="img/it-takes-two-logo.png" alt="">
-            <h2>Rompi il cerchio</h2>
+            <h2>Un'avventura cooperativa selvaggia ti attende</h2>
             <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante, i suoi intensi combattimenti e una grafica migliorata.</p>
             <button type="button" class="btn btn-danger">Acquista ora</button>
         </div>
@@ -201,41 +208,51 @@
             <div class="row">
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
-                    <br><span>io</span><br><span>io</span>
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
-                    <br><span>io</span><br><span>io</span>
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="">
+                    <br><span>Tony Hawk's Pro<i class="fas fa-trademark"></i></span><br><span>Skater 1 + 2</span>
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-2">
                     <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="">
+                    <br><span>Crash Bandicoot 4 It's</span><br><span>About time</span>
                 </div>
             </div>
         </div>
@@ -244,7 +261,7 @@
     <div class="container" id="explore">
         <div id="explore_text" class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>Esplora PlayStation 4©</h1>
+                <h1>Esplora PlayStation<i class="far fa-registered"></i> 4</h1>
                 <p>Giochi incredibili e intrattenimento senza fine. Non c'è mai stato un momento migliore per giocare sulla tua PS4.</p>
             </div>
         </div>
@@ -281,7 +298,7 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="plus_text">
                     <img src="img/ps-plus-logo.png" alt="">
-                    <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante, i suoi intensi combattimenti e una grafica migliorata.</p>
+                    <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante.</p>
                     <button type="button" class="btn btn-danger">Esplora Play Station Plus</button>
                 </div>
             </div>
@@ -316,7 +333,7 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="now_text">
                     <img src="img/ps-now-logo-two-column.png" alt="">
-                    <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante, i suoi intensi combattimenti e una grafica migliorata.</p>
+                    <p>Il thriller d'azione cinematografico di Remedy arriva su PlayStation, con la sua storia emozionante.</p>
                     <button type="button" class="btn btn-danger">Esplora Play Station Plus</button>
                 </div>
             </div>
@@ -359,39 +376,47 @@
                     <img id="world_logo" src="img/language-globe.svg" alt=""><span> Country/Region:Italy</span>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-                   <div class="li_">
-                    <ul>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                    </ul>
-                    <ul class>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                    </ul>
-                    <ul>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                        <li>Link footer n</li>
-                    </ul>
+                   <div class="row flex-column-reverse flex-lg-row">
+                        <div class="col">
+                            <ul>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                                <li>Link footer n</li>
+                            </ul>
+                        </div>
                    </div>
                 </div>
             </div>
             <div class="row">
-                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                 <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                      <img id="sony_logo" src="img/sie-logo.svg" alt="">
                      <p>Website ©2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi, nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i diritti riservati. Maggiori info</p>
                  </div>
             </div>
         </div>
     </footer>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
